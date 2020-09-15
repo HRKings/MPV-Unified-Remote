@@ -3,29 +3,29 @@
 	<!-- Main -->
 	<row lightcolor="#09060a" darkcolor="#09060a">
 		<button text="Exit" icon="docclose" ontap="exit" />
-		<toggle text="" icon="fullscreen" checked="false" onchange="fullscreen" />
-		<button text="" icon="camera" ontap="screenshot" />
+		<toggle text="Toggle Fullscreen" icon="fullscreen" checked="false" onchange="fullscreen" />
+		<button text="Take Screenshot" icon="camera" ontap="screenshot" />
 	</row>
 	<!-- Util -->
 	<row lightcolor="#524c54" darkcolor="#524c54">
-	<button text="" icon="previous" ontap="seekPrevious" />
-		<button text="" icon="rwd" ontap="prevChapter" />
-		<toggle text="" icon="refresh" checked="false" onchange="loop" />
-		<button text="" icon="ff" ontap="nextChapter" />
-		<button text="" icon="next" ontap="seekNext" />
+		<button text="Previous Media" icon="previous" ontap="seekPrevious" />
+		<button text="Previous Chapter" icon="rwd" ontap="prevChapter" />
+		<toggle text="Loop Current File" icon="refresh" checked="false" onchange="loop" />
+		<button text="Next Chapter" icon="ff" ontap="nextChapter" />
+		<button text="Next Media" icon="next" ontap="seekNext" />
 	</row>
 	<!-- Playback -->
 	<row lightcolor="#703E7A" darkcolor="#451654">
-		<button text="" icon="arrowleft" ontap="seekLeftMore" />
+		<button text="Seek Left More" icon="arrowleft" ontap="seekLeftMore" />
 		<button text="Seek Left" icon="left" ontap="seekLeft" />
-		<toggle text="" icon="playpause" checked="false" onchange="playPause" />
+		<toggle text="Play/Pause" icon="playpause" checked="false" onchange="playPause" />
 		<button text="Seek Right" icon="right" ontap="seekRight" />
-		<button text="" icon="arrowright" ontap="seekRightMore" />
+		<button text="Seek Right More" icon="arrowright" ontap="seekRightMore" />
 	</row>
 	<!-- Volume -->
 	<row lightcolor="#524c54" darkcolor="#524c54">
-		<button text="Vol Down" icon="vdown" ontap="volumeDown" />
-		<button text="Vol Up" icon="vup" ontap="volumeUp" />
+		<button text="Volume Down" icon="vdown" ontap="volumeDown" />
+		<button text="Volume Up" icon="vup" ontap="volumeUp" />
 		<toggle text="" icon="vmute" checked="false" onchange="mute" />
 	</row>
 </layout>
