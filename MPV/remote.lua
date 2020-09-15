@@ -8,67 +8,82 @@ local kb = libs.keyboard;
 -- Keyboard Library
 -- http://www.unifiedremote.com/api/libs/keyboard
 
+--@help Previous Chapter button
+actions.prevChapter = function ()
+	kb.stroke("pagedown");
+end
+
+--@help Loop button
+actions.loop = function ()
+	kb.stroke("shift","L");
+end
+
+--@help Next Chapter button
+actions.nextChapter = function ()
+	kb.stroke("pgup");
+end
+
 --@help Seek Left button
-actions.seekleft = function ()
+actions.seekLeft = function ()
 	kb.stroke("left");
 end
 
 --@help Seek Left More button
-actions.seekleftmore = function ()
+actions.seekLeftMore = function ()
 	kb.stroke("down");
 end
 
 --@help Seek Previous button
-actions.seekprevious = function ()
-	kb.press("shift","<");
+actions.seekPrevious = function ()
+	kb.stroke("mediaprevious");
 end
 
 --@help Seek Right button
-actions.seekright = function ()
+actions.seekRight = function ()
 	kb.stroke("right");
 end
 
 --@help Seek Right More button
-actions.seekrightmore = function ()
+actions.seekRightMore = function ()
 	kb.stroke("up");
 end
 
 --@help Seek Next button
-actions.seeknext = function ()
-	kb.press("shift",">");
+actions.seekNext = function ()
+	kb.stroke("medianext");
 end
 
---@help playpause toggle
-actions.playpause = function ()
+--@help Play/Pause toggle
+actions.playPause = function ()
 	kb.stroke("space");
 end
 
---@help volumedown button
-actions.volumedown = function ()
+--@help Volume Down button
+actions.volumeDown = function ()
 	kb.stroke("9");
 end
 
---@help volumeup button
-actions.volumeup = function ()
+--@help Volume Up button
+actions.volumeUp = function ()
 	kb.stroke("0");
 end
 
---@help mute toggle
+--@help Mute toggle
 actions.mute = function ()
 	kb.stroke("m");
 end
 
---@help exit button
+--@help Exit button
 actions.exit = function ()
 	kb.stroke("Q");
 end
 
---@help fullscreen toggle
+--@help Fullscreen toggle
 actions.fullscreen = function ()
 	kb.stroke("f");
 end
 
---@help screenshot button
+--@help Screenshot button
 actions.screenshot = function ()
 	kb.stroke("s");
 end
